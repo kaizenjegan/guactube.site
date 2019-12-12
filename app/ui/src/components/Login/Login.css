@@ -1,0 +1,22 @@
+.login, input, .MuiInputBase-input {
+  color: white;
+}
+
+
+.MuiInputBase-input{
+  color: white !important;
+  background-color: gray;
+}
+.MuiFormLabel-root, .MuiInputLabel-root, .MuiInputLabel-formControl, .MuiInputLabel-animated, .MuiInputLabel-shrink
+.MuiFormLabel-filled {
+  color: white;
+}
+
+.MuiButton-label{
+  /* background-color: yellow;; */
+}
+
+label {
+  color: white !important;
+}
+/* MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl */

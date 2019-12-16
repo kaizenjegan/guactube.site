@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import videojs from 'video.js';
+import * as videojs from 'video.js';
 import { tsConstructorType } from '@babel/types';
 import VideoPlayer from './player';
 

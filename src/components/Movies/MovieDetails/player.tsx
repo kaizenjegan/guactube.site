@@ -4,9 +4,9 @@ import * as React from 'react';
 // Styles
 import 'video.js/dist/video-js.css';
 
-interface VideoPlayerPropsInferface {
-  videoJsOptions: videojs.PlayerOptions;
-}
+// interface VideoPlayerPropsInferface {
+//   videoJsOptions: videojs.PlayerOptions;
+// }
 
 // export default class VideoPlayer extends React.Component {
 //   private player?: videojs.Player;

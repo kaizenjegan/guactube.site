@@ -54,7 +54,7 @@ import 'video.js/dist/video-js.css';
 
 
 export default class VideoPlayer extends React.Component {
-  return() {
-    <div></div>
-  }
+  render() {
+    return <div> </div>
+  };
 }

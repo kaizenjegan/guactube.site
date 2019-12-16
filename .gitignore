@@ -3,3 +3,4 @@ app/service/node_modules/
 app/service/public/assets/
 
 node_modules/
+*-lock.json

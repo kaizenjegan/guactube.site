@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
-import { HardwareDesktopWindows } from 'material-ui/svg-icons';
+// import { HardwareDesktopWindows } from 'material-ui/svg-icons';
 // import './App.css';
 import  SignupForm  from '../Signup/Signup';
 import {Auth} from '../../utils/Auth';

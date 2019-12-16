@@ -56,6 +56,6 @@ import ReactPlayer from 'react-player';
 export default class VideoPlayer extends React.Component {
   render() {
     // return <div> </div>
-    return <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' playing />
+    return <ReactPlayer url='http://localhost:3000/assets/r_morty.mp4' playing />
   };
 }

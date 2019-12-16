@@ -11,7 +11,7 @@ const videoJsOptions = {
   controls: true,
   width: "1000",
   sources: [{
-    src: 'http://localhost:3001/assets/rickAndMorty03.mp4',
+    src: 'http://localhost:3001/assets/r_morty.mp4',
     type: 'video/mp4'
   }]
 };

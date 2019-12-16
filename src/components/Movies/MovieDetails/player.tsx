@@ -51,10 +51,11 @@ import 'video.js/dist/video-js.css';
 //   }
 // }
 
-
+import ReactPlayer from 'react-player';
 
 export default class VideoPlayer extends React.Component {
   render() {
-    return <div> </div>
+    // return <div> </div>
+    return <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' playing />
   };
 }

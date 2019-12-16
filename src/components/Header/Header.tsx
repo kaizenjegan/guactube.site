@@ -39,7 +39,8 @@ const Header: React.FC = () => {
       <AppBar position="static" style={{ background: 'black' }}>
         <Toolbar>
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-            <img src="https://avocomputing.com/images/icons/avo-logo.png" width="30px"></img>
+            {/* <img src="https://avocomputing.com/images/icons/avo-logo.png" width="30px"></img> */}
+            <MenuIcon />
           </IconButton>
           <Typography variant="h6" className={classes.title}>
             <Link href="/" className={classes.link}>Home</Link>

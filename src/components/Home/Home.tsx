@@ -7,13 +7,13 @@ import {Auth} from '../../utils/Auth';
 
 const Home: React.FC = () => {
 
-  // window.location.replace('/movies');
+  // // window.location.replace('/movies');
 
-  if (Auth.isLoggedIn()) {
-    window.location.replace('/movies');
-    return (<div> redirecting.. </div>)
-    // return
-  }
+  // if (Auth.isLoggedIn()) {
+  //   // window.location.replace('/movies');
+  //   return (<div> redirecting.. </div>)
+  //   // return
+  // }
 
 
   return (<div>

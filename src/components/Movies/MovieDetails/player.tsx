@@ -4,9 +4,7 @@ import * as React from 'react';
 // Styles
 import 'video.js/dist/video-js.css';
 
-// interface VideoPlayerPropsInferface {
-//   videoJsOptions: videojs.PlayerOptions;
-// }
+
 
 // export default class VideoPlayer extends React.Component {
 //   private player?: videojs.Player;
@@ -51,11 +49,16 @@ import 'video.js/dist/video-js.css';
 //   }
 // }
 
-import ReactPlayer from 'react-player';
+export interface VideoPlayerPropsInferface {
+  url: String;
+}
+
+// import ReactPlayer from 'react-player';
 
 export default class VideoPlayer extends React.Component {
   render() {
     // return <div> </div>
-    return <ReactPlayer url='http://localhost:3000/assets/r_morty.mp4' playing />
+    // return <ReactPlayer url='http://localhost:3000/assets/r_morty.mp4' playing controls />
+    return <div> video goes here</div>
   };
 }

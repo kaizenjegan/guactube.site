@@ -3,3 +3,4 @@
 - protected routes
 - Added nested routes
 - integrated video js
+- Added Auth Context

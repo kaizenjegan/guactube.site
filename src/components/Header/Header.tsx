@@ -9,7 +9,9 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu'
-import { Auth } from '../../utils/Auth'
+import { Auth } from '../../utils/Auth';
+import { AuthContext } from '../../Context/Auth';
+import AuthContextProvider from '../../Context/Auth';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -29,33 +31,40 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-
+//console.log(Auth.isLoggedIn())
 const Header: React.FC = () => {
   const classes = useStyles();
-
-  console.log(Auth.isLoggedIn())
+  // user,
+  // authenticated,
+  // Login,
+  // Logout,
+  // error
   return (
-    <div className={classes.root}>
-      <AppBar position="static" style={{ background: 'black' }}>
-        <Toolbar>
-          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-            {/* <img src="https://avocomputing.com/images/icons/avo-logo.png" width="30px"></img> */}
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" className={classes.title}>
-            <Link href="/" className={classes.link}>Home</Link>
-            <Link href="/about" className={classes.link}>About</Link>
-            <Link href="/tv" className={classes.link}>TV Shows</Link>
-            <Link href="/movies" className={classes.link}>Movies</Link>
-          </Typography>
-          {Auth.isLoggedIn() ?
-              <Link href="/logout" className={classes.link}>Logout</Link> :
-              <Link href="/login" className={classes.link}>Login</Link>
-            }
-        </Toolbar>
-      </AppBar>
-    </div>
-  )
+    <AuthContext.Consumer>
+      {({ user, authenticated, Login, Logout, error }) => {
+        return (<div className={classes.root}>
+          <AppBar position="static" style={{ background: 'black' }}>
+            <Toolbar>
+              <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+                {/* <img src="https://avocomputing.com/images/icons/avo-logo.png" width="30px"></img> */}
+                <MenuIcon />
+              </IconButton>
+              <Typography variant="h6" className={classes.title}>
+                <Link href="/" className={classes.link}>Home</Link>
+                <Link href="/about" className={classes.link}>About</Link>
+                <Link href="/tv" className={classes.link}>TV Shows</Link>
+                <Link href="/movies" className={classes.link}>Movies</Link>
+              </Typography>
+              {Auth.isLoggedIn() ?
+                <Link href="/logout" className={classes.link}>Logout</Link> :
+                <Link href="/login" className={classes.link}>Login</Link>
+              }
+            </Toolbar>
+          </AppBar>
+        </div>);
+      }}
+    </AuthContext.Consumer>
+  );
 }
 
 export default Header

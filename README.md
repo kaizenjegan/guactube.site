@@ -1,6 +1,6 @@
-# Guac Tube Site
+# Guac Tube 
 
-One Paragraph of project description goes here
+This is a private video library web app built in react for me to share videos with my friends!
 
 ## Getting Started
 

@@ -21,7 +21,7 @@ A step by step series on how to get the development up and running
 clone project
 
 ```
-git clone this repo url
+git clone <this-repo-url>
 ```
 
 install project

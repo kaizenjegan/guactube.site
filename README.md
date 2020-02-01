@@ -1,6 +1,6 @@
 # Guac Tube 
 
-This is a private video library web app built in react for me to share videos with my friends!
+This is a private video library web app built in react to enable me to share videos with my friends!
 
 ## Getting Started
 

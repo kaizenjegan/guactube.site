@@ -1,6 +1,9 @@
-# Guac Tube 
+# Guac Tube
 
 This is a private video library web app built in react to enable me to share videos with my friends!
+
+![alt text](screenshot.png)
+
 
 ## Getting Started
 
@@ -71,7 +74,7 @@ In the future, Please read [CONTRIBUTING.md](#)  for details on our code of cond
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
 
 ## Authors
 

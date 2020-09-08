@@ -12,19 +12,18 @@ import {
 } from "react-router-dom";
 
 //@ts-ignore react video
+import { Player } from 'video-react';
+//@ts-ignore react video
 import { DefaultPlayer as Video } from 'react-html5video';
 import { moveCursor } from 'readline';
-// import 'react-html5video/dist/styles.css';
+import 'react-html5video/dist/styles.css';
+
+// import "../../../../node_modules/video-react/dist/video-react.css"; // import css
+// import ''
 
 interface Props {
-
 }
-const videoJsOptions = {
-  sources: [{
-    src: 'hhttps://coolkidsvcdb.file.core.windows.net/atlanta-file-share/ATLANTA%20-%20S01%20E01%20-%20The%20Big%20Bang%20(720p%20Web-DL).mp4',
-    type: 'video/mp4'
-  }]
-};
+
 
 const MovieDetail: React.FC<Props> = (props) => {
   const sources = ["./video/video.mp4", "./video/video.webm", "./video/video.ogv"]
@@ -34,7 +33,8 @@ const MovieDetail: React.FC<Props> = (props) => {
   console.log(id);
   const movie = movies.find(m => m.id === id) || {
     id: 0,
-    url: "default"
+    url: "default",
+    poster: ""
   };
 
   // console.log(movie);
@@ -43,15 +43,22 @@ const MovieDetail: React.FC<Props> = (props) => {
 
   return (
 
-    <Video autoPlay loop muted
+    <Video  loop muted
       controls={['PlayPause', 'Seek', 'Time', 'Volume', 'Fullscreen']}
-      // poster={movie.cover || ''}
+      poster={movie.poster || ''}
       onCanPlayThrough={() => {
         // Do stuff
       }}>
       <source src={movie.url || 'https://media.w3.org/2010/05/sintel/trailer.mp4'} type="video/mp4" />
     </Video>
   );
+  // return (
+  //   <Player
+  //     playsInline
+  //     poster={movie.poster}
+  //     src={movie.url}
+  //   />
+  // );
 
 }
 

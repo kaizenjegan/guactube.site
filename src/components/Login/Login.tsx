@@ -41,14 +41,18 @@ const Login: React.FC = () => {
 
     }
 
-    // GuacService().login(username, password).then(data => {
-    //   //redirect
-    //   console.log('login successful');
-    //   window.location.replace('/'); //todo: use history
-    // }, err => {
-    //   console.log(err);
-    // })
+    if (username === "guest" && password.trim() === 'smokegoodeatgoodlivegood') {
+
+      GuacService().login(username, password).then(data => {
+        //redirect
+        console.log('login successful');
+        window.location.replace('/'); //todo: use history
+      }, err => {
+        console.log(err);
+      })
+    }
   }
+
   return (
     <div className={classes.root}>
       <h1>Login</h1>
@@ -71,7 +75,7 @@ const Login: React.FC = () => {
         onChange={e => setPassword(e.target.value)}
       />
       <br />
-      <Button onClick={() => Login(username, password)} variant="contained" color="primary">
+      <Button onClick={() => handleLogin(username, password)} variant="contained" color="primary">
         Login
       </Button>
     </div>

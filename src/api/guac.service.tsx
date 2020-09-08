@@ -1,8 +1,10 @@
 import { async } from "q";
 import { Auth } from '../utils/Auth'
+import { movies } from './movies';
 const axios = require('axios');
 // import { }
 // const { }
+
 
 export const GuacService = () => {
   // login = (username, password) => {
@@ -12,14 +14,7 @@ export const GuacService = () => {
   return {
     getMovies: async () => {
 
-      let movies = [
-        {
-          "name": "Rick & Morty S4e02: The Old Man and the Seat"
-        },
-        {
-          "name": "Rick & Morty S4e03: One Crew over the Crewcoo's Morty"
-        }
-      ]
+
       let promiseToMovies = new Promise((resolve, reject) => {
         //TODO: put in config file
         //

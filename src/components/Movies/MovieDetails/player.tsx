@@ -3,6 +3,7 @@ import * as React from 'react';
 
 // Styles
 import 'video.js/dist/video-js.css';
+import MovieDetail  from './Details';
 
 
 
@@ -59,6 +60,7 @@ export default class VideoPlayer extends React.Component {
   render() {
     // return <div> </div>
     // return <ReactPlayer url='http://localhost:3000/assets/r_morty.mp4' playing controls />
-    return <div> video goes here</div>
+    // return <div> video goes here</div>
+    return <MovieDetail></MovieDetail>
   };
 }

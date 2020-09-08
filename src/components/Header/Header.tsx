@@ -51,9 +51,9 @@ const Header: React.FC = () => {
               </IconButton>
               <Typography variant="h6" className={classes.title}>
                 <Link href="/" className={classes.link}>Home</Link>
-                <Link href="/about" className={classes.link}>About</Link>
-                <Link href="/tv" className={classes.link}>TV Shows</Link>
-                <Link href="/movies" className={classes.link}>Movies</Link>
+                {/* <Link href="/about" className={classes.link}>About</Link>
+                <Link href="/tv" className={classes.link}>TV Shows</Link> */}
+                <Link href="/movies" className={classes.link}>Videos</Link>
               </Typography>
               {Auth.isLoggedIn() ?
                 <Link href="/logout" className={classes.link}>Logout</Link> :

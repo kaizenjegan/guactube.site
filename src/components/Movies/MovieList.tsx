@@ -27,10 +27,10 @@ const MovieList: React.FC<Props> = (props) => {
 
   return (
     <div>
-      <h1>Movie List</h1>
+      <h1>Video List</h1>
       <ul className="guac-movie-list">
       {movies.map((m: any) => {
-        return <li><a href={`${path}/1`}>{m.name}</a></li>
+        return <li><a href={`${path}/${m.id}`}>{m.name}</a></li>
       })}
       </ul>
     </div>

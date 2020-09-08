@@ -34,7 +34,7 @@ export const GuacService = () => {
 
         setTimeout(() => {
           resolve(movies);
-        }, 2000)
+        }, 10)
       });
 
       let token = await promiseToMovies; // wait until the promise resolves (*)

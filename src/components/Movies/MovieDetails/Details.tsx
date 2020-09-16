@@ -43,7 +43,7 @@ const MovieDetail: React.FC<Props> = (props) => {
 
   return (
 
-    <Video  loop muted
+    <Video  loop
       controls={['PlayPause', 'Seek', 'Time', 'Volume', 'Fullscreen']}
       poster={movie.poster || ''}
       onCanPlayThrough={() => {
